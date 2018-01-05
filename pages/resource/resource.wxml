@@ -1,4 +1,15 @@
 <!--pages/resource/resource.wxml-->
 <text>今天的作业</text>
-<image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+<image src="{{imageSrc}}"></image>
+<button bindtap="chooseImageButtonTap">获取图片</button>
 <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+<button bindtap="recordButtonTap">开始录音</button>
+<button bindtap="stopRecordButtonTap">停止录音</button>
+<view class="section tc">
+  <video id="myVideo" src="{{videosrc}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur" placeholder='请输入弹幕'/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>
