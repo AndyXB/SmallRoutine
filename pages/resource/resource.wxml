@@ -1,0 +1,4 @@
+<!--pages/resource/resource.wxml-->
+<text>今天的作业</text>
+<image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>

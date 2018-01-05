@@ -1,0 +1,15 @@
+<!--pages/Home/home.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='flow-left'>
+<button type="primary" class='radius'> 学校介绍 </button>
+<button type="warn" class='radius'> 学校相册 </button>
+<button type="primary" class='radius'> 师资力量 </button>
+<button type="warn" class='radius'> 课程介绍 </button>
+</view>
